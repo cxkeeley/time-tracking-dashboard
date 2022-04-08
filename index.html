@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <meta name="description" content="Time tracking dashboard">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="card-group">
+      <div class="feature">
+        <div class="feature-top bg-blue">
+          <img src="images/image-jeremy.png" alt="jeremy">
+          <h1>Report for <span>Jeremy Robson</span></h1>
+        </div>
+
+        <div class="feature-bottom">
+          <button class="btn js-btn-daily">Daily</button>
+          <button class="btn js-btn-weekly active">Weekly</button>
+          <button class="btn js-btn-monthly">Monthly</button>
+        </div>
+      </div>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-orange" style="background-image: url('images/icon-work.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Work</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>5hrs</h3> <!-- daily -->
+            <p>Yesterday - 7hrs</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>32hrs</h3> <!-- weekly -->
+            <p>Last Week - 36hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>103hrs</h3> <!-- monthly -->
+            <p>Last Month - 128hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-soft-blue" style="background-image: url('images/icon-play.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Play</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>1hr</h3> <!-- daily -->
+            <p>Yesterday - 2hrs</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>10hrs</h3> <!-- weekly -->
+            <p>Last Week - 8hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>23hrs</h3> <!-- monthly -->
+            <p>Last Month - 29hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-light-red" style="background-image: url('images/icon-study.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Study</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>0hrs</h3> <!-- daily -->
+            <p>Yesterday - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>4hrs</h3> <!-- weekly -->
+            <p>Last Week - 7hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>13hrs</h3> <!-- monthly -->
+            <p>Last Month - 19hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-lime-green" style="background-image: url('images/icon-exercise.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Exercise</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>1hrs</h3> <!-- daily -->
+            <p>Yesterday - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>4hrs</h3> <!-- weekly -->
+            <p>Last Week - 5hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>11hrs</h3> <!-- monthly -->
+            <p>Last Month - 18hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-violet" style="background-image: url('images/icon-social.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Social</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>1hrs</h3> <!-- daily -->
+            <p>Yesterday - 3hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>5hrs</h3> <!-- weekly -->
+            <p>Last Week - 10hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>21hrs</h3> <!-- monthly -->
+            <p>Last Month - 23hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card-header bg bg-yellow" style="background-image: url('images/icon-self-care.svg');"></div>
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <span>Self Care</span><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
+          </h2>
+          
+          <div class="card-text js-daily" style="display: none;">
+            <h3>0hrs</h3> <!-- daily -->
+            <p>Yesterday - 1hr</p> <!-- daily -->
+          </div>
+
+          <div class="card-text js-weekly">
+            <h3>2hrs</h3> <!-- weekly -->
+            <p>Last Week - 2hrs</p> <!-- weekly -->
+          </div>
+
+          <div class="card-text js-monthly" style="display: none;">
+            <h3>7hrs</h3> <!-- monthly -->
+            <p>Last Month - 11hrs</p> <!-- monthly -->
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/bwalkermills">Byron</a>.
+    </div>
+  </main>
+</body>
+</html>
